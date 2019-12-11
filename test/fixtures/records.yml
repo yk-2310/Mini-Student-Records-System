@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studentid: 1
+  sname: MyString
+  dob: MyText
+  father: MyString
+  mother: MyString
+  phno: 1
+  email: MyText
+
+two:
+  studentid: 1
+  sname: MyString
+  dob: MyText
+  father: MyString
+  mother: MyString
+  phno: 1
+  email: MyText

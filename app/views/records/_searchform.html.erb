@@ -1,0 +1,8 @@
+<%= form_with scope: :record, url: records_search_path(@record), local: true do |form|%>
+  <p class="center">
+    <%= form.label "Enter name: " %>
+    <%= form.text_field :sname %>
+ 
+    <%= form.submit "Search" %>
+  </p>
+<% end %>

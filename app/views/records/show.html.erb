@@ -1,0 +1,43 @@
+ <body>
+  
+<h1 class="center"> Student Details </h1> 
+<p class="center"><%= link_to 'Edit this record?' , edit_record_path(@record) %></p> 
+  <table class="minimalistBlack center">
+  <tr>
+    <th><%= "Student ID :" %></th>
+    <td><%= @record.studentid %></td>
+  </tr>
+ 
+  <tr>
+    <th><%=  "Student Name : " %></th>
+    <td><%= @record.sname == "" || @record.sname == nil ? "Not Provided" : @record.sname %></td>
+  </tr>
+
+  <tr>
+    <th><%=  "Date of birth : " %></th>
+    <td><%= @record.dob == "" || @record.dob == nil ? "Not Provided" : @record.dob %></td>
+  </tr>
+
+  <tr>
+    <th><%=  "Father's Name :" %></th>
+    <td><%= @record.father == "" || @record.father ==  nil ? "Not Provided" : @record.father %></td>
+  </tr>
+
+  <tr>
+    <th><%=  "Mother's Name :" %></th>
+    <td><%= @record.mother == "" || @record.mother == nil ? "Not Provided" : @record.mother %></td>
+  </tr>
+
+  <tr>
+    <th><%= "Contact Number :" %></th>
+    <td><%= @record.phno == nil ? "Not Provided" : @record.phno %></td>
+  </tr>
+
+  <tr>
+    <th><%=  "Email ID :" %></th>
+    <td><%= @record.email == "" || @record.email == nil ? "Not Provided" : @record.email %></td>
+  </tr>
+</table>
+<br><br>
+<p class="center"><%= link_to 'Back', records_path %></p>
+</body>
